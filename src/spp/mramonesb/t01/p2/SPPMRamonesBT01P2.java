@@ -35,13 +35,13 @@ public class SPPMRamonesBT01P2 {
     datos=kb.nextDouble();
     return datos;
     }
-    public static int operacion (double base, double altu){    
+    public static double operacion (double base, double altu){    
     //Paso 3. operaciones
-    int sup, per;
-    sup= (int) (base*altu);
+    double sup, per;
+    sup= (double) (base*altu);
     System.out.println("La superficie es " + sup);
     
-    per= (int) ((base*altu)/2);
+    per= (double) ((base+altu)*2);
     System.out.println("El perimetro es " + per);
     return sup;
     }
